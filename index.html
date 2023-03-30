@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey-Form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body style="text-align: left;">
+    <dd>
+    <h1>Something About Survey Form</h1>
+    </dd>
+    
+    <!--crat form-->
+    <form id="form">
+      <!--Details-->
+      <div class="form-control">
+        <label for="name" id="label-name">Full Name</label>
+        <!--input type text-->
+        <input type="text" id="name" placeholder="Enter Your Name">
+      </div>
+      <br>
+      <div class="form-control">
+        <label for="email">Email</label>
+        <!-- input type email-->
+        <input type="email" id="email" placeholder="enter your email">
+      </div>
+      <br>
+      <div class="form-control">
+        <label for="password">password</label>
+        <!-- input type email-->
+        <input type="password" id="email" placeholder="enter your email" maxlength="12" required>
+      </div>
+      <br>
+      <div class="form-control">
+        <label for="phone">Phone Number</label>
+        <!-- input type email-->
+        <input type="number id="phone" placeholder="(063-)" minlength="12" >
+      </div>
+      <br>
+      <div class="form-control">
+        <label for="age" id="label-age">Age</label>
+        <!--input type text-->
+        <input type="text" id="age" value="20" required>
+      </div>
+      <br>
+      <div class="form-control">
+        <label for="role" id="label-role">which option describes you?</label>
+        <!--dropdown options-->
+
+        <br>
+        <select name="role" id="role">
+          <option value="student">Student</option>
+          <option value="teacher">teacher</option>
+          <option value="intern">intern</option>
+          <option value="professional">professional</option>
+        </select>
+      </div>
+      <br>
+      
+      <div class="form-control">
+        <label> would you recommed something about survey form to your friends?</label>
+        <!--input type raadio buttton -->
+        <br>
+        <label for="recommed-1">
+          <input type="radio" id="recommed-1" name="recommed">Yes</input>
+        </label>
+        
+        <br>
+        <label for="recommed-2">
+          <input type="radio" id="recommed-2" name="recommed">No</input>
+        </label>
+        <br>
+        <label for="recommed-3">
+          <input type="radio" id="recommed-3" name="recommed">Maybe</input>
+        </label>
+      </div>
+    
+      <br>
+      <div class="form-control">
+        <label> Languages and framworks known
+          <small>(check all that apply)</small>
+        </label>
+        <br>
+        <!--input type checkbox-->
+        <label for="inp-1">
+          <input type="checkbox" name="inp">C</input></label>
+          <br>
+          <label for="inp-2">
+            <input type="checkbox" name="inp">C++</input></label>
+            <br>
+            <label for="inp-3">
+              <input type="checkbox" name="inp">c#</input>
+            </label>
+            <br>
+            <label for="inp-4">
+              <input type="checkbox" name="inp">Java</input>
+            </label>
+            <br>
+            <label for="inp-5">
+              <input type="checkbox" name="inp">PhP</input>
+            </label>
+            <br>
+            <label for="inp-6">
+              <input type="checkbox" name="inp">Mangodb</input>
+            </label>
+            <br>
+            <label for="inp-7">
+              <input type="checkbox" name="inp">JavaScript</input>
+            </label>
+            <br>
+            <label for="inp-7">
+              <input type="checkbox" name="inp">React</input>
+            </label>
+            <br>
+            <label for="inp-7">
+              <input type="checkbox" name="inp">Python</input>
+            </label>
+            <br>
+            <label for="inp-7">
+              <input type="checkbox" name="inp">Html</input>
+            </label>
+            <br>
+            <label for="inp-7">
+              <input type="checkbox" name="inp">Css</input>
+            </label>
+            <br>
+            <label for="inp-7">
+              <input type="checkbox" name="inp">MySQL</input>
+            </label>
+      </div>
+      <br>
+      <div class="form-control">
+        <label for="comment">
+          any comments or suggestions
+        </label>
+        <br>
+        <!--multi-line text input control-->
+        <textarea name="comment" id="comment" placeholder="enter your comment"></textarea>
+      </div>
+      <br>
+      <!--multi-line text input control-->
+      <button type="reset" value="reset">Reset</button>
+      <button type="submit" value="Submit">submit</button>
+    </form>
+    </div>
+  </body>
+</html>
